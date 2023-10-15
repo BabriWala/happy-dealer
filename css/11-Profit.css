@@ -1,15 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+box-sizing: border-box;
 }
 
 body {
     font-family: 'Baloo Da 2', cursive;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: '"Plus Jakarta Sans"', sans-serif;
 }
 
 .container {
-    padding: 37px 25px 35px 27px;
+    padding: 37px 25px 150px 27px;
 
 }
 
@@ -22,7 +23,7 @@ body {
     width: 100%;
     color: var(--black, #222950);
     text-align: center;
-    font-family: Plus Jakarta Sans;
+    font-family: "Plus Jakarta Sans";
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -30,11 +31,12 @@ body {
     letter-spacing: 0.54px;
 }
 
-.date__filter {
+.date__filter select {
     display: inline-flex;
     height: 26px;
     align-items: center;
     gap: 4px;
+    background-color: transparent;
     flex-shrink: 0;
     border-radius: 3px;
     border: 1px solid #F1F5F9;
@@ -65,7 +67,7 @@ body {
 
 .total__title {
     color: var(--gray, #8A94A6);
-    font-family: Plus Jakarta Sans;
+    font-family: "Plus Jakarta Sans";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -75,7 +77,7 @@ body {
 
 .total__ammount {
     color: var(--black, #222950);
-    font-family: Plus Jakarta Sans;
+    font-family: "Plus Jakarta Sans";
     font-size: 20px;
     font-style: normal;
     font-weight: 800;
@@ -85,7 +87,7 @@ body {
 
 .total__ammount span {
     color: #34D399;
-    font-family: Plus Jakarta Sans;
+    font-family: "Plus Jakarta Sans";
     font-size: 10px;
     font-style: normal;
     font-weight: 700;
@@ -134,7 +136,7 @@ body {
 
 .title__of {
     color: var(--black, #222950);
-    font-family: Plus Jakarta Sans;
+    font-family: "Plus Jakarta Sans";
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -145,8 +147,9 @@ body {
 
 .date__option {}
 
-.date__option input {
-    width: 45px;
+.date__option select {
+    /* width: 45px; */
+    background-color: transparent;
     padding: 8px 0 8px 8px;
     color: #64748B;
     font-family: Inter;
@@ -156,7 +159,6 @@ body {
     line-height: 160%;
     border-radius: 3px;
     border: 1px solid #F1F5F9;
-    background-image: url(./../images/down-arrow.png);
     background-repeat: no-repeat;
     background-position: 35px 8px;
 }

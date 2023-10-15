@@ -36,6 +36,17 @@ $(document).ready(function () {
   })
 
 
+
+  // Product
+  $('.profile__card').click(function(){
+    $('.baki-container-popup').addClass('show')
+  })
+  $('.product__deny-btn').click(function(){
+    $('.baki-container-popup').removeClass('show')
+  })
+  $('.product__accept-btn').click(function(){
+    $('.baki-container-popup').removeClass('show')
+  })
   
 
 
