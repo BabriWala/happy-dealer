@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/01-Dashboard.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="main-dashboard.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="41"
+            height="41"
+            viewBox="0 0 41 41"
+            fill="none"
+          >
+            <circle cx="20.5" cy="20.5" r="20.5" fill="#F8F8FB" />
+            <path
+              d="M23 15L17 21L23 27"
+              stroke="#8A94A6"
+              stroke-width="1.875"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <h2 class="navbar__title">Dashboard</h2>
+      </div>
+      <div class="total__sell-card">
+        <div class="date__filter">
+          <select>
+            <option value="date">Date</option>
+            <option value="date">Date</option>
+            <option value="date">Date</option>
+          </select>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="53"
+            height="53"
+            viewBox="0 0 53 53"
+            fill="none"
+          >
+            <circle cx="26.5" cy="26.5" r="26.5" fill="#F4F7FE" />
+            <path
+              d="M17.0961 23.1347C16.7881 23.4427 16.7881 23.9379 16.7881 24.9292V31.2369C16.7881 32.2283 16.7881 32.7234 17.0961 33.0315C17.4041 33.3395 17.8993 33.3395 18.8907 33.3395C19.882 33.3395 20.3772 33.3395 20.6852 33.0315C20.9932 32.7234 20.9932 32.2283 20.9932 31.2369V24.9292C20.9932 23.9379 20.9932 23.4427 20.6852 23.1347C20.3772 22.8267 19.882 22.8267 18.8907 22.8267C17.8993 22.8267 17.4041 22.8267 17.0961 23.1347Z"
+              fill="#1D6AFF"
+            />
+            <path
+              opacity="0.4"
+              d="M31.8149 15.7758C31.5068 16.0838 31.5068 16.579 31.5068 17.5703V31.237C31.5068 32.2284 31.5068 32.7235 31.8149 33.0315C32.1229 33.3396 32.618 33.3396 33.6094 33.3396C34.6008 33.3396 35.0959 33.3396 35.4039 33.0315C35.712 32.7235 35.712 32.2284 35.712 31.237V17.5703C35.712 16.579 35.712 16.0838 35.4039 15.7758C35.0959 15.4678 34.6008 15.4678 33.6094 15.4678C32.618 15.4678 32.1229 15.4678 31.8149 15.7758Z"
+              fill="#1D6AFF"
+            />
+            <path
+              opacity="0.7"
+              d="M24.1475 20.7241C24.1475 19.7328 24.1475 19.2376 24.4555 18.9296C24.7635 18.6216 25.2587 18.6216 26.25 18.6216C27.2414 18.6216 27.7365 18.6216 28.0446 18.9296C28.3526 19.2376 28.3526 19.7328 28.3526 20.7241V31.237C28.3526 32.2283 28.3526 32.7235 28.0446 33.0315C27.7365 33.3395 27.2414 33.3395 26.25 33.3395C25.2587 33.3395 24.7635 33.3395 24.4555 33.0315C24.1475 32.7235 24.1475 32.2283 24.1475 31.237V20.7241Z"
+              fill="#1D6AFF"
+            />
+            <path
+              d="M16.7885 35.7051C16.5793 35.7051 16.3788 35.7881 16.2309 35.936C16.0831 36.0839 16 36.2844 16 36.4935C16 36.7027 16.0831 36.9032 16.2309 37.0511C16.3788 37.1989 16.5793 37.282 16.7885 37.282H35.7115C35.9207 37.282 36.1212 37.1989 36.2691 37.0511C36.4169 36.9032 36.5 36.7027 36.5 36.4935C36.5 36.2844 36.4169 36.0839 36.2691 35.936C36.1212 35.7881 35.9207 35.7051 35.7115 35.7051H16.7885Z"
+              fill="#1D6AFF"
+            />
+          </svg>
+        </div>
+        <div>
+          <p class="total__title">Total Sell</p>
+          <h2 class="total__ammount">50,2000৳ <span>+2,5%</span></h2>
+        </div>
+      </div>
+      <div class="time__span-btn">
+        <button class="time__span">This Week</button>
+        <button class="time__span">This Month</button>
+        <button class="time__span">This Year</button>
+        <button class="time__span">Lifetime</button>
+      </div>
+      <div class="total__sell-card">
+        <div class="date__filter">
+          <select>
+            <option value="date">Date</option>
+            <option value="date">Date</option>
+            <option value="date">Date</option>
+          </select>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="53"
+            height="53"
+            viewBox="0 0 53 53"
+            fill="none"
+          >
+            <circle
+              cx="26.5"
+              cy="26.5"
+              r="26.5"
+              fill="#4951FF"
+              fill-opacity="0.06"
+            />
+            <path
+              opacity="0.2"
+              d="M26.585 38.17C32.9834 38.17 38.17 32.9834 38.17 26.585C38.17 20.1866 32.9834 15 26.585 15C20.1866 15 15 20.1866 15 26.585C15 28.4386 15.4356 30.1902 16.2083 31.7438C16.4145 32.1562 16.4829 32.6277 16.3636 33.0737L15.6742 35.6526C15.6062 35.9077 15.6065 36.1762 15.675 36.4312C15.7435 36.6862 15.8778 36.9187 16.0645 37.1055C16.2512 37.2922 16.4838 37.4265 16.7388 37.495C16.9938 37.5635 17.2623 37.5638 17.5174 37.4957L20.0962 36.8064C20.5439 36.6938 21.0173 36.7486 21.4274 36.9605C23.0295 37.7583 24.7952 38.1724 26.585 38.17Z"
+              fill="#4951FF"
+            />
+            <path
+              d="M30.332 24.964V26.284H26.396V29.02C26.396 29.244 26.428 29.412 26.492 29.524C26.556 29.628 26.7 29.68 26.924 29.68C27.108 29.68 27.288 29.652 27.464 29.596C27.64 29.532 27.8 29.452 27.944 29.356C28.088 29.252 28.204 29.132 28.292 28.996C28.38 28.86 28.424 28.72 28.424 28.576C28.424 28.504 28.392 28.436 28.328 28.372C28.264 28.308 28.14 28.276 27.956 28.276C27.812 28.276 27.684 28.288 27.572 28.312L27.38 27.088C27.524 27.048 27.684 27.02 27.86 27.004C28.044 26.988 28.232 26.98 28.424 26.98C28.896 26.98 29.276 27.088 29.564 27.304C29.852 27.52 29.996 27.856 29.996 28.312C29.996 28.744 29.896 29.128 29.696 29.464C29.496 29.8 29.232 30.08 28.904 30.304C28.576 30.528 28.216 30.7 27.824 30.82C27.44 30.932 27.064 30.988 26.696 30.988C26.36 30.988 26.076 30.948 25.844 30.868C25.62 30.788 25.44 30.684 25.304 30.556C25.216 30.468 25.132 30.368 25.052 30.256C24.98 30.144 24.92 29.988 24.872 29.788C24.832 29.588 24.812 29.32 24.812 28.984V26.284H23.804V24.964H30.332ZM24.692 22C24.956 22 25.188 22.032 25.388 22.096C25.588 22.16 25.756 22.26 25.892 22.396C26.052 22.548 26.176 22.76 26.264 23.032C26.352 23.304 26.396 23.688 26.396 24.184V25.012H24.812V24.244C24.812 24.044 24.796 23.876 24.764 23.74C24.732 23.604 24.668 23.504 24.572 23.44C24.476 23.368 24.332 23.332 24.14 23.332C24.036 23.332 23.924 23.344 23.804 23.368C23.692 23.392 23.576 23.428 23.456 23.476L23 22.324C23.312 22.212 23.592 22.132 23.84 22.084C24.088 22.028 24.372 22 24.692 22Z"
+              fill="#4951FF"
+            />
+          </svg>
+        </div>
+        <div>
+          <p class="total__title">Total Profit</p>
+          <h2 class="total__ammount">৳ 20,00 <span>+12%</span></h2>
+        </div>
+      </div>
+      <div class="dashboard__chart">
+        <div class="dashboard__chart-container">
+          <div class="dashboard__over-sell">
+            <h6 class="dasbhoard__sell">Overall Sell</h6>
+            <h5 class="dashboard__amount">৳48,574.21 <span>+20%</span></h5>
+          </div>
+          <select class="top__select-date">
+            <option value="this-week">This Month</option>
+          </select>
+        </div>
+        <canvas id="dashboard-chart" class="dashboard__main-chart"></canvas>
+      </div>
+      <div class="dashboard__chart">
+        <div class="dashboard__chart-container">
+          <div class="dashboard__over-sell">
+            <h6 class="dasbhoard__sell">Overall Sell</h6>
+            <h5 class="dashboard__amount">৳48,574.21 <span>+20%</span></h5>
+          </div>
+          <select class="top__select-date">
+            <option value="this-week">This Month</option>
+          </select>
+        </div>
+        <canvas id="dashboard-chart2" class="dashboard__main-chart"></canvas>
+      </div>
+    </div>
+
+    <div class="nav-container">
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link active" href="home.html">
+              <i class="navigation__icon" data-feather="home"></i>
+              <span class="navigation__text">HOME</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="order.html" class="navigation__link">
+              <i class="navigation__icon" data-feather="package"></i>
+              <span class="navigation__text">Order</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="new-order.html">
+              <i class="navigation__icon" data-feather="plus-square"></i>
+              <span class="navigation__text">New Order</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="due.html">
+              <i class="navigation__icon" data-feather="inbox"></i>
+              <span class="navigation__text">Due</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

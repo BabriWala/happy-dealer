@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/04-Total Product.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="login__navbar">
+        <a href="main-dashboard.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="41"
+            height="41"
+            viewBox="0 0 41 41"
+            fill="none"
+          >
+            <circle cx="20.5" cy="20.5" r="20.5" fill="#F8F8FB" />
+            <path
+              d="M23 15L17 21L23 27"
+              stroke="#8A94A6"
+              stroke-width="1.875"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <button class="logout__button" style="cursor: pointer">Logout</button>
+      </div>
+      <div class="total__product-so">
+        <div class="total__product-so-left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="31"
+            viewBox="0 0 30 31"
+            fill="none"
+          >
+            <path
+              d="M9.633 28.5123C12.267 29.8953 13.584 30.5853 15 30.5853V15.5853L0.957 8.19482C0.936592 8.22808 0.91659 8.26158 0.897 8.29532C8.9407e-08 9.81632 0 11.7108 0 15.4983V15.6738C0 19.4598 -1.78814e-07 21.3543 0.8955 22.8753C1.7925 24.3978 3.4065 25.2453 6.633 26.9388L9.633 28.5123Z"
+              fill="#007AFF"
+            />
+            <path
+              opacity="0.7"
+              d="M23.3655 4.23296L20.3655 2.65796C17.733 1.27646 16.416 0.584961 15 0.584961C13.5825 0.584961 12.267 1.27496 9.63303 2.65796L6.63303 4.23296C3.47703 5.88896 1.86303 6.73496 0.957031 8.19296L15 15.585L29.043 8.19446C28.134 6.73496 26.523 5.88896 23.3655 4.23296Z"
+              fill="#007AFF"
+            />
+            <path
+              opacity="0.5"
+              d="M29.1045 8.29532C29.0844 8.26157 29.0639 8.22807 29.043 8.19482L15 15.5853V30.5853C16.416 30.5853 17.733 29.8953 20.367 28.5123L23.367 26.9373C26.5935 25.2438 28.2075 24.3978 29.1045 22.8753C30 21.3543 30 19.4598 30 15.6753V15.4998C30 11.7123 30 9.81632 29.1045 8.29532Z"
+              fill="#007AFF"
+            />
+          </svg>
+          <h2 class="total__product-title">Total Product</h2>
+        </div>
+        <div>
+          <h2 class="total__product-so-right">120</h2>
+        </div>
+      </div>
+      <div class="total__product-filter">
+        <div class="total__product-filter-data">
+          <select>
+            <option>All So</option>
+            <option>All So</option>
+            <option>All So</option>
+            <option>All So</option>
+          </select>
+        </div>
+        <div class="total__product-filter-icon" style="cursor: pointer">
+          <img src="images/filter-4.png" alt="" />
+        </div>
+      </div>
+      <div class="product__wrapper">
+        <div class="product-details-popup">
+          <div class="product__card">
+            <img src="./images/product-1.png" alt="" />
+            <h2 class="product__name">মিল্ক বিস্কুট</h2>
+            <p class="product__weight">(50g)</p>
+          </div>
+        </div>
+        <div class="product-details-popup">
+          <div class="product__card">
+            <img src="./images/product-1.png" alt="" />
+            <h2 class="product__name">মিল্ক বিস্কুট</h2>
+            <p class="product__weight">(50g)</p>
+          </div>
+        </div>
+        <div class="product-details-popup">
+          <div class="product__card">
+            <img src="./images/product-1.png" alt="" />
+            <h2 class="product__name">মিল্ক বিস্কুট</h2>
+            <p class="product__weight">(50g)</p>
+          </div>
+        </div>
+        <div class="product-details-popup">
+          <div class="product__card">
+            <img src="./images/product-1.png" alt="" />
+            <h2 class="product__name">মিল্ক বিস্কুট</h2>
+            <p class="product__weight">(50g)</p>
+          </div>
+        </div>
+        <div class="product-details-popup">
+          <div class="product__card">
+            <img src="./images/product-1.png" alt="" />
+            <h2 class="product__name">মিল্ক বিস্কুট</h2>
+            <p class="product__weight">(50g)</p>
+          </div>
+        </div>
+        <div class="product-details-popup">
+          <div id="card" class="product__card">
+            <img src="./images/product-1.png" alt="" />
+            <h2 class="product__name">মিল্ক বিস্কুট</h2>
+            <p class="product__weight">(50g)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product__details-container">
+      <div class="popup__cancel">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="41"
+          height="41"
+          viewBox="0 0 41 41"
+          fill="none"
+        >
+          <circle cx="20.5" cy="20.5" r="20.5" fill="#F2F3F9" />
+          <path
+            d="M26 26L15 15M26 15L15 26"
+            stroke="#0472ED"
+            stroke-width="1.25"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+
+      <div class="popup__container">
+        <div class="product__picture">
+          <img src="./images/product-2.png" alt="" />
+        </div>
+        <div class="popup__body">
+          <div class="product__data">
+            <div class="product__title">
+              <h2 class="product__name">মিল্ক বিস্কুট</h2>
+              <p class="product__weight">(50g)</p>
+            </div>
+          </div>
+          <div class="product__rate">
+            <div class="product__buyrate">
+              <h2>ক্রয় মূল্য :</h2>
+              <p>৩. ৯৫</p>
+            </div>
+            <div class="product__sellrate">
+              <h2>বিক্রয় মূল্য :</h2>
+              <p>৪. ১৮</p>
+            </div>
+          </div>
+          <div class="product__counter-wrapper">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="39"
+                height="39"
+                viewBox="0 0 39 39"
+                fill="none"
+              >
+                <rect width="39" height="39" rx="8" fill="#F2F3F9" />
+                <path
+                  d="M25.8947 21H14.1053C13.5011 21 13 20.5467 13 20C13 19.4533 13.5011 19 14.1053 19H25.8947C26.1879 19 26.469 19.1054 26.6763 19.2929C26.8836 19.4804 27 19.7348 27 20C27 20.2652 26.8836 20.5196 26.6763 20.7071C26.469 20.8946 26.1879 21 25.8947 21Z"
+                  fill="#007AFF"
+                />
+              </svg>
+            </div>
+
+            <input class="product__handler-amount" type="text" value="6%" />
+
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="39"
+                height="39"
+                viewBox="0 0 39 39"
+                fill="none"
+              >
+                <rect width="39" height="39" rx="8" fill="#F2F3F9" />
+                <path
+                  d="M24.9737 18.4737H20.5263V14.0263C20.5263 13.4653 20.0611 13 19.5 13C18.9389 13 18.4737 13.4653 18.4737 14.0263V18.4737H14.0263C13.4653 18.4737 13 18.9389 13 19.5C13 20.0611 13.4653 20.5263 14.0263 20.5263H18.4737V24.9737C18.4737 25.5347 18.9389 26 19.5 26C20.0611 26 20.5263 25.5347 20.5263 24.9737V20.5263H24.9737C25.5347 20.5263 26 20.0611 26 19.5C26 18.9389 25.5347 18.4737 24.9737 18.4737Z"
+                  fill="#007AFF"
+                />
+              </svg>
+            </div>
+          </div>
+          <button class="product__confirm-btn">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <div class="nav-container">
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link active" href="home.html">
+              <i class="navigation__icon" data-feather="home"></i>
+              <span class="navigation__text">HOME</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="order.html" class="navigation__link">
+              <i class="navigation__icon" data-feather="package"></i>
+              <span class="navigation__text">Order</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="new-order.html">
+              <i class="navigation__icon" data-feather="plus-square"></i>
+              <span class="navigation__text">New Order</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="due.html">
+              <i class="navigation__icon" data-feather="inbox"></i>
+              <span class="navigation__text">Due</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="js/index.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
