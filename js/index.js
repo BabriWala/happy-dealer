@@ -1,73 +1,75 @@
-feather.replace();
-const links = document.querySelectorAll(".navigation__link");
-
-links.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (!link.classList.contains("active")) {
-      const active = document.querySelector(".navigation__link.active");
-      if (active !== null) {
-        active.classList.remove("active");
-      }
-      link.classList.add("active");
-
-      // Delay opening the page by 1 second
-      setTimeout(() => {
-        window.location.href = link.getAttribute("href");
-      }, 1000); // 1000 milliseconds = 1 second
-    }
-  });
-});
-
 $(document).ready(function () {
+  feather.replace();
+  const links = document.querySelectorAll(".navigation__link");
 
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (!link.classList.contains("active")) {
+        const active = document.querySelector(".navigation__link.active");
+        if (active !== null) {
+          active.classList.remove("active");
+        }
+        link.classList.add("active");
+
+        // Delay opening the page by 1 second
+        setTimeout(() => {
+          window.location.href = link.getAttribute("href");
+        }, 1000); // 1000 milliseconds = 1 second
+      }
+    });
+  });
   // $('.product__details-container').hide();
 
-  $('.product-details-popup').click(function(){
-    $('.product__details-container').addClass('show');
-  })
+  $(".product-details-popup").click(function () {
+    $(".product__details-container").addClass("show");
+  });
 
-  $('.popup__cancel').click(function(){
-    $('.product__details-container').removeClass('show');
-  })
+  $(".popup__cancel").click(function () {
+    $(".product__details-container").removeClass("show");
+  });
 
-  $('.product__confirm-btn').click(function(){
-    $('.product__details-container').removeClass('show');
-  })
-
-
+  $(".product__confirm-btn").click(function () {
+    $(".product__details-container").removeClass("show");
+  });
 
   // Product
-  $('.profile__card').click(function(){
-    $('.baki-container-popup').addClass('show')
-  })
-  $('.product__deny-btn').click(function(){
-    $('.baki-container-popup').removeClass('show')
-  })
-  $('.product__accept-btn').click(function(){
-    $('.baki-container-popup').removeClass('show')
-  })
-  
+  $(".profile__card").click(function () {
+    $(".baki-container-popup").addClass("show");
+  });
+  $(".product__deny-btn").click(function () {
+    $(".baki-container-popup").removeClass("show");
+  });
+  $(".product__accept-btn").click(function () {
+    $(".baki-container-popup").removeClass("show");
+  });
 
+  // Hide all tab content except the first one
+  $(".Inventory-tab-content:not(:first)").hide();
 
+  // Handle tab clicks
+  $(".Inventory-tab").click(function () {
+    // Hide all tab content
+    $(".Inventory-tab-content").hide();
 
+    // Show the selected tab content
+    var clickedTabId = $(this).attr("id");
+    $("#" + clickedTabId.replace("Inventory-tab", "Inventory-content")).show();
 
+    // Update the active tab's appearance
+    $(".Inventory-tab").removeClass("active");
+    $(this).addClass("active");
 
+    // Remove classes starting with "active" from all tabs
+    $(".Inventory-tab").removeClass(function (index, className) {
+      return (className.match(/(^|\s)active\d+/g) || []).join(" ");
+    });
 
+    // Set a class like "active1" for the clicked tab
+    $(this).addClass("active1");
+  });
 
-
-
-
-
-
-
-
-
-
-
-
-
-console.log("ok")
+  console.log("ok");
   // Show the first tab and hide the rest
   console.log($("#tabs-nav li:first-child").addClass("active"));
   $("#tabs-nav li:first-child").addClass("active");
