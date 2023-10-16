@@ -311,14 +311,14 @@
 }
 
 /* Inventory 2 */
-#Inventory-content-2 .product__card {
+#Inventory-content-3 .product__card {
     border-radius: 8px;
     border: 1px solid var(--greyscale-100, #F1F5F9);
     background: #F8FAFC;
     margin-top: 30px;
 }
 
-#Inventory-content-2 .product__card-title {
+#Inventory-content-3 .product__card-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -326,7 +326,7 @@
 
 }
 
-#Inventory-content-2 .product__card-title-name {
+#Inventory-content-3 .product__card-title-name {
     color: var(--black, #222950);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: "Baloo Da 2";
@@ -337,7 +337,7 @@
     letter-spacing: -0.5px;
 }
 
-#Inventory-content-2 .product__card-title-inside {
+#Inventory-content-3 .product__card-title-inside {
     color: #595F84;
     text-align: right;
     font-family: "Baloo Da 2";
@@ -347,23 +347,23 @@
     line-height: 160%;
 }
 
-#Inventory-content-2 .product__card-title-right {
+#Inventory-content-3 .product__card-title-right {
     display: flex;
     align-items: center;
     gap: 8px;
     font-family: "Baloo Da 2";
 }
 
-#Inventory-content-2 .product__card__bottom {
+#Inventory-content-3 .product__card__bottom {
     padding: 15px 27px 10px 21px;
     border-right: 1px solid #F0F4F9;
 }
 
-#Inventory-content-2 .product__card__bottom:last-of-type {
+#Inventory-content-3 .product__card__bottom:last-of-type {
     border: none;
 }
 
-#Inventory-content-2 .product__card__bottom h2 {
+#Inventory-content-3 .product__card__bottom h2 {
     color: var(--black-2, #595F84);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: "Baloo Da 2";
@@ -375,11 +375,11 @@
     margin-bottom: 8px;
 }
 
-#Inventory-content-2 .oc_minus {
+#Inventory-content-3 .oc_minus {
     color: #FF565E;
 }
 
-#Inventory-content-2 .product__card__bottomkey {
+#Inventory-content-3 .product__card__bottomkey {
     color: var(--black-2, #595F84);
     font-family: "Plus Jakarta Sans";
     font-size: 12px;
@@ -388,7 +388,7 @@
     line-height: normal;
 }
 
-#Inventory-content-2 .product__card__bottomkey button {
+#Inventory-content-3 .product__card__bottomkey button {
     display: inline-flex;
     padding: 0px 3px;
     justify-content: center;
@@ -408,19 +408,19 @@
     margin-left: 6px;
 }
 
-#Inventory-content-2 .product__card__bottomkey-so {
+#Inventory-content-3 .product__card__bottomkey-so {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-#Inventory-content-2 .total {
+#Inventory-content-3 .total {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#Inventory-content-2 .total p {
+#Inventory-content-3 .total p {
     color: var(--blue, #007AFF);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: "Baloo Da 2";
@@ -431,7 +431,7 @@
     letter-spacing: -0.5px;
 }
 
-#Inventory-content-2 .product__card__bottom-wrapper {
+#Inventory-content-3.product__card__bottom-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -444,13 +444,13 @@
 
 /* Inventory-3 */
 
-#Inventory-content-3 .profile__data {
+#Inventory-content-4 .profile__data {
     display: flex;
     align-items: center;
     gap: 18px;
 }
 
-#Inventory-content-3 .profile__name {
+#Inventory-content-4 .profile__name {
     color: var(--black, #222950);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -461,7 +461,7 @@
     line-height: normal;
 }
 
-#Inventory-content-3 .profile__plase {
+#Inventory-content-4 .profile__plase {
     color: var(--gray, #8A94A6);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: "Baloo Da 2";
@@ -472,7 +472,7 @@
     margin-top: 2px;
 }
 
-#Inventory-content-3 .profile__card-btn {
+#Inventory-content-4 .profile__card-btn {
     display: inline-flex;
     padding: 6px 16px;
     flex-direction: column;
@@ -491,7 +491,7 @@
     border: none;
 }
 
-#Inventory-content-3 .profile__card {
+#Inventory-content-4 .profile__card {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -508,12 +508,15 @@
 
   
 .active1{
-    border: 1px solid #8F94FF;
+    border: 1px solid #0CAF60;
 }
 .active2{
-    border: 1px solid #1D6AFF;
+    border: 1px solid #8F94FF;
 }
 .active3{
+    border: 1px solid #1D6AFF;
+}
+.active4{
     border: 1px solid #EB7178;
 }
   
@@ -523,7 +526,7 @@
     display: none;
   }
   
-  .Inventory-tab-content:first-of-type {
+  #Inventory-content-1 {
     display: block ;
   }
   

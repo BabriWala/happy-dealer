@@ -45,7 +45,7 @@ $(document).ready(function () {
   });
 
   // Hide all tab content except the first one
-  $(".Inventory-tab-content:not(:first-of-type)").hide();
+  // $(".Inventory-tab-content:not(:first-of-type)").hide();
   // $(".Inventory-tab-content:first-of-type").show();
 
 
