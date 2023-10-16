@@ -517,14 +517,16 @@
     border: 1px solid #EB7178;
 }
   
+
+
   .Inventory-tab-content {
     display: none;
   }
   
-  .Inventory-tab-content:first-child {
-    display: block;
+  .Inventory-tab-content:first-of-type {
+    display: block ;
   }
-
+  
 /* Mobile Navigation */
 /* navigation */
 

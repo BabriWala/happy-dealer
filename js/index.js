@@ -45,8 +45,12 @@ $(document).ready(function () {
   });
 
   // Hide all tab content except the first one
-  $(".Inventory-tab-content:not(:first)").hide();
+  $(".Inventory-tab-content:not(:first-of-type)").hide();
+  // $(".Inventory-tab-content:first-of-type").show();
 
+
+  // Set the first tab as active
+  $("#Inventory-tab-1").addClass("active");
   // Handle tab clicks
   $(".Inventory-tab").click(function () {
     // Hide all tab content
