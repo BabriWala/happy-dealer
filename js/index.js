@@ -109,6 +109,62 @@ $(document).ready(function () {
     return false;
   });
 
+
+  const profitdashboardStatisticsChartData = {
+    labels: ["Mon", "Tue"],
+    datasets: [
+      {
+        label: "Weekly Sales",
+        data: [350000, 300000],
+        backgroundColor: ["rgba(56, 189, 248, 1)", "#fafafb"],
+        borderWidth: 1,
+        cutout: "80%",
+      },
+    ],
+  };
+  var stackedText3 = {
+    id: "stackedText",
+    afterDatasetsDraw(chart, args, options) {
+      const {
+        ctx,
+        data,
+        chartArea: { top, bottom, left, right, width, height },
+      } = chart;
+      ctx.save();
+      ctx.font = "700 25px Inter";
+      ctx.fillStyle = "#222950";
+      ctx.textAlign = "center";
+      ctx.fillText("৳" + data.datasets[0].data[0], width / 2, height / 2 + 20);
+      // width = "141px";
+      // height = "141px"
+      ctx.font = "400 15px Inter";
+      ctx.fillStyle = "#595F84";
+      ctx.textAlign = "center";
+      ctx.fillText("Total", width / 2, height / 2 + top + -20);
+    },
+  };
+  // config
+  const profitdashboardStatisticsChartConfig = {
+    type: "doughnut",
+    data: profitdashboardStatisticsChartData,
+    options: {
+      plugins: {
+        legend: {
+          display: false,
+        },
+      },
+    },
+    plugins: [stackedText3],
+  };
+
+  // render init block
+  const profiDashboardmyChart = new Chart(
+    document.getElementById("profit-dashboard-statistics-chart"),
+    profitdashboardStatisticsChartConfig
+  );
+
+
+  
   const DashoboardProfileStatisticsChartData = {
     labels: ["Mon", "Tue"],
     datasets: [

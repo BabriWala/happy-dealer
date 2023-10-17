@@ -70,6 +70,12 @@
     align-items: center;
 }
 
+.filter__icon input{
+    height: 40px;
+    padding: 5px; 
+    
+}
+
 .so__card-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -450,6 +456,12 @@
     gap: 18px;
 }
 
+#Inventory-content-4 .profile__data img{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 11px; 
+}
 #Inventory-content-4 .profile__name {
     color: var(--black, #222950);
     text-align: center;
