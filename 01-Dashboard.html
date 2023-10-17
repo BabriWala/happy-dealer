@@ -144,7 +144,7 @@
       <div class="dashboard__chart">
         <div class="dashboard__chart-container">
           <div class="dashboard__over-sell">
-            <h6 class="dasbhoard__sell">Overall Sell</h6>
+            <h6 class="dasbhoard__sell">Overall Revenue</h6>
             <h5 class="dashboard__amount">৳48,574.21 <span>+20%</span></h5>
           </div>
           <select class="top__select-date">
@@ -153,38 +153,36 @@
         </div>
         <canvas id="dashboard-chart2" class="dashboard__main-chart"></canvas>
       </div>
+      <div class="dashboard__statistics">
+        <div class="dashboard__statistics-top-area">
+            <h2 class="dashboard__statistics-title">Statistic 
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.04014 12.2011C10.122 12.2011 12.6203 9.70279 12.6203 6.62095C12.6203 3.5391 10.122 1.04077 7.04014 1.04077C3.95829 1.04077 1.45996 3.5391 1.45996 6.62095C1.45996 9.70279 3.95829 12.2011 7.04014 12.2011Z" stroke="#94A3B8" stroke-width="1.39504" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.04004 4.14087V6.62095" stroke="#94A3B8" stroke-width="1.39504" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.04004 9.10107H7.04671" stroke="#94A3B8" stroke-width="1.86006" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </h2>
+          <select class="dashboard__statistics-select">
+            <option value="week">This Week</option>
+            <option value="month">This Month</option>
+          </select>
+        </div>
+        <div class="dashboard__statistics-chart-container">
+          <canvas id="dashboard-statistics-chart"  class="dashboard-statistics-chart"></canvas>
+        </div>
+        <div class="dashboard__statistics-persons">
+          <div class="dashboard__statistics-persons-left-side">
+            <span></span>
+            <span>SO: Rasel</span>
+          </div>
+          <div class="dashboard__statistics-persons-right-side">
+            <span></span>
+            <span>SO: Rasel</span>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="nav-container">
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link active" href="home.html">
-              <i class="navigation__icon" data-feather="home"></i>
-              <span class="navigation__text">HOME</span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a href="order.html" class="navigation__link">
-              <i class="navigation__icon" data-feather="package"></i>
-              <span class="navigation__text">Order</span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="new-order.html">
-              <i class="navigation__icon" data-feather="plus-square"></i>
-              <span class="navigation__text">New Order</span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="due.html">
-              <i class="navigation__icon" data-feather="inbox"></i>
-              <span class="navigation__text">Due</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/index.js"></script>

@@ -21,6 +21,61 @@ $(document).ready(function () {
   });
   // $('.product__details-container').hide();
 
+
+  const dashboardStatisticsChartData = {
+    labels: ['Mon', 'Tue'],
+    datasets: [{
+      label: 'Weekly Sales',
+      data: [350000, 300000],
+      backgroundColor: [
+        'rgba(56, 189, 248, 1)',
+        '#fafafb'
+      ],
+      borderWidth: 1,
+      cutout: '80%'
+    }]
+  };
+  var stackedText = {
+    id: 'stackedText',
+    afterDatasetsDraw(chart, args, options){
+      const {ctx, data, chartArea: {top, bottom, left, right, width, height}} = chart;
+      ctx.save();
+      ctx.font = "700 30px Inter";
+      ctx.fillStyle = '#222950';
+      ctx.textAlign = "center"
+      ctx.fillText("৳"+data.datasets[0].data[0], width/2, height/2 + 20)
+      // width = "141px";
+      // height = "141px"
+      ctx.font = "400 15px Inter";
+      ctx.fillStyle = '#595F84';
+      ctx.textAlign = "center"
+      ctx.fillText("Total", width/2, height/2 + top + -30)
+    }
+  }
+  // config 
+  const dashboardStatisticsChartConfig = {
+    type: 'doughnut',
+    data: dashboardStatisticsChartData,
+    options: {
+      plugins: {
+        legend: {
+          display: false
+        }
+      }
+    },
+    plugins: [stackedText]
+  };
+
+  // render init block
+  const myChart = new Chart(
+    document.getElementById('dashboard-statistics-chart'),
+    dashboardStatisticsChartConfig
+  );
+
+  const chartContainer = document.getElementById('dashboard-statistics-chart');
+  chartContainer.style.width = '200px'; // Set your desired width here
+chartContainer.style.height = '200px'; // Set your desired height here
+
   $(".product-details-popup").click(function () {
     $(".product__details-container").addClass("show");
   });
