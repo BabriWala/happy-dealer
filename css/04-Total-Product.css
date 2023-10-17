@@ -144,21 +144,29 @@ a {
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    max-height: 435px;
-    overflow: hidden;
-    overflow-y: scroll;
+    /* max-height: 435px; */
+    /* overflow: hidden;? */
+    /* overflow-y: scroll; */
+    margin-bottom: 100px;
+    
 }
-
+.product__wrapper .product-details-popup{
+    width: 100%;
+}
 .product__card {
     text-align: center;
-    width: 149px;
-    height: 132px;
+    width: 100%;
     flex-shrink: 0;
     border-radius: 8.65px;
     border: 0.865px solid rgba(46, 49, 133, 0.08);
     background: #FFF;
     box-shadow: 0px 10px 20px 0px rgba(0, 46, 97, 0.03);
-    padding-top: 19px;
+    padding: 19px 0 10px 0;
+}
+
+.product__card img{
+    width: 50px;
+    height: 60px; 
 }
 
 .product__name {
@@ -263,7 +271,7 @@ a {
 
 .product__name {
     color: var(--black, #222950);
-    font-family: Baloo Da 2;
+    font-family: "Baloo Da 2";
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -272,13 +280,16 @@ a {
 
 .product__weight {
     color: var(--gray, #8A94A6);
-    font-family: Baloo Da 2;
+    font-family: "Baloo Da 2";
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
-
+#amount-minus,
+#amount-plus{
+    cursor: pointer;
+}
 .product__rate {
     flex-shrink: 0;
     border-radius: 8px;
@@ -295,7 +306,7 @@ a {
 
 .product__buyrate h2 {
     color: var(--black-2, #595F84);
-    font-family: Baloo Da 2;
+    font-family: "Baloo Da 2";
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -305,7 +316,7 @@ a {
 .product__buyrate p {
     color: var(--black, #222950);
     text-align: right;
-    font-family: Baloo Da 2;
+    font-family: "Baloo Da 2";
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -321,7 +332,7 @@ a {
 
 .product__sellrate h2 {
     color: var(--black-2, #595F84);
-    font-family: Baloo Da 2;
+    font-family: "Baloo Da 2";
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -331,7 +342,7 @@ a {
 .product__sellrate p {
     color: var(--black, #222950);
     text-align: right;
-    font-family: Baloo Da 2;
+    font-family: "Baloo Da 2";
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -366,7 +377,7 @@ a {
 
 .product__confirm-btn {
     color: #FFF;
-    font-family: Baloo Da 2;
+    font-family: "Baloo Da 2";
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -381,6 +392,14 @@ a {
     border-radius: 10px;
     background: var(--g, linear-gradient(180deg, #258AFF 0%, #0063FF 100%));
     border: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+
+}
+.product__confirm-btn:hover{
+    border: 1px solid #258AFF;
+    background: transparent;
+    color: #0063FF;
 }
 
 .popup__body {
