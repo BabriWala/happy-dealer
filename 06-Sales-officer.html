@@ -1,115 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
     <link rel="stylesheet" href="css/06-Sales-officer.css" />
-</head>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="navbar">
-            <a href="main-dashboard.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
-                    <circle cx="20.5" cy="20.5" r="20.5" fill="#F8F8FB" />
-                    <path d="M23 15L17 21L23 27" stroke="#8A94A6" stroke-width="1.875" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-            </a>
-            <h2 class="navbar__title">Sales officer</h2>
+      <div class="navbar">
+        <a href="main-dashboard.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="41"
+            height="41"
+            viewBox="0 0 41 41"
+            fill="none"
+          >
+            <circle cx="20.5" cy="20.5" r="20.5" fill="#F8F8FB" />
+            <path
+              d="M23 15L17 21L23 27"
+              stroke="#8A94A6"
+              stroke-width="1.875"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <h2 class="navbar__title">Sales officer</h2>
+      </div>
+      <div class="total__product-so">
+        <div class="total__product-so-left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="55"
+            height="54"
+            viewBox="0 0 55 54"
+            fill="none"
+          >
+            <rect
+              width="55"
+              height="54"
+              rx="16"
+              fill="#007AFF"
+              fill-opacity="0.06"
+            />
+            <path
+              d="M27.2678 24.268C29.8271 24.268 31.9018 22.1933 31.9018 19.634C31.9018 17.0747 29.8271 15 27.2678 15C24.7085 15 22.6338 17.0747 22.6338 19.634C22.6338 22.1933 24.7085 24.268 27.2678 24.268Z"
+              fill="#007AFF"
+            />
+            <path
+              opacity="0.5"
+              d="M36.536 32.9564C36.536 35.8353 36.536 38.1697 27.268 38.1697C18 38.1697 18 35.8353 18 32.9564C18 30.0775 22.1497 27.7432 27.268 27.7432C32.3863 27.7432 36.536 30.0775 36.536 32.9564Z"
+              fill="#007AFF"
+            />
+          </svg>
+          <h2 class="total__product-title">Total SO</h2>
         </div>
-        <div class="total__product-so">
-            <div class="total__product-so-left">
-                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="54" viewBox="0 0 55 54" fill="none">
-                    <rect width="55" height="54" rx="16" fill="#007AFF" fill-opacity="0.06" />
-                    <path
-                        d="M27.2678 24.268C29.8271 24.268 31.9018 22.1933 31.9018 19.634C31.9018 17.0747 29.8271 15 27.2678 15C24.7085 15 22.6338 17.0747 22.6338 19.634C22.6338 22.1933 24.7085 24.268 27.2678 24.268Z"
-                        fill="#007AFF" />
-                    <path opacity="0.5"
-                        d="M36.536 32.9564C36.536 35.8353 36.536 38.1697 27.268 38.1697C18 38.1697 18 35.8353 18 32.9564C18 30.0775 22.1497 27.7432 27.268 27.7432C32.3863 27.7432 36.536 30.0775 36.536 32.9564Z"
-                        fill="#007AFF" />
-                </svg>
-                <h2 class="total__product-title">Total SO</h2>
-            </div>
-            <div>
-                <h2 class="total__product-so-right">02</h2>
-            </div>
+        <div>
+          <h2 class="total__product-so-right">02</h2>
         </div>
-        <div class="officer__data-wrapper">
-            <div class="officer__data">
-                <img src="./images/profile-2.png" alt="">
-                <div>
-                    <h2 class="officer__name">রমজান আলী</h2>
-                    <p class="officer__company">Pran Food & Bavreage</p>
-                </div>
-            </div>
-            <a href="07-Dashboard Profile.html">
-                <button class="officer__details">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
-                        <path d="M1 13L7 7L0.999999 1" stroke="#8A94A6" stroke-width="1.875" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </button>
-            </a>
+      </div>
+      <a style="text-decoration: none;" href="07-Dashboard-Profile.html">
+      <div class="officer__data-wrapper">
+        <div class="officer__data">
+          <img src="./images/profile-2.png" alt="" />
+          <div>
+            <h2 class="officer__name">রমজান আলী</h2>
+            <p class="officer__company">Pran Food & Bavreage</p>
+          </div>
         </div>
-        <div class="officer__data-wrapper">
-            <div class="officer__data">
-                <img src="./images/profile-2.png" alt="">
-                <div>
-                    <h2 class="officer__name">রমজান আলী</h2>
-                    <p class="officer__company">Pran Food & Bavreage</p>
-                </div>
-            </div>
-            <a href="07-Dashboard Profile.html">
-                <button class="officer__details">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
-                        <path d="M1 13L7 7L0.999999 1" stroke="#8A94A6" stroke-width="1.875" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </button>
-            </a>
+          <button class="officer__details">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="8"
+              height="14"
+              viewBox="0 0 8 14"
+              fill="none"
+            >
+              <path
+                d="M1 13L7 7L0.999999 1"
+                stroke="#8A94A6"
+                stroke-width="1.875"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+      </div>
+      </a>
+      <a style="text-decoration: none;" href="07-Dashboard-Profile.html">
+      <div class="officer__data-wrapper">
+        <div class="officer__data">
+          <img src="./images/profile-2.png" alt="" />
+          <div>
+            <h2 class="officer__name">রমজান আলী</h2>
+            <p class="officer__company">Pran Food & Bavreage</p>
+          </div>
         </div>
+          <button class="officer__details">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="8"
+              height="14"
+              viewBox="0 0 8 14"
+              fill="none"
+            >
+              <path
+                d="M1 13L7 7L0.999999 1"
+                stroke="#8A94A6"
+                stroke-width="1.875"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+      </div>
+      </a>
+
+      
     </div>
 
     <div class="nav-container">
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link active" href="main-dashboard.html">
-                <i class="navigation__icon" data-feather="home"></i>
-                <span class="navigation__text">HOME</span>
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a href="06-Sales-officer.html" class="navigation__link">
-                <i class="navigation__icon" data-feather="user"></i>
-                <span class="navigation__text">SO</span>
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="11-Profit.html">
-                <i class="navigation__icon" data-feather="dollar-sign"></i>
-                <span class="navigation__text">Profit</span>
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="08-Dashboard-Inventory.html">
-                <i class="navigation__icon" data-feather="clipboard"></i>
-                <span class="navigation__text">Inventory</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <script src="https://unpkg.com/feather-icons"></script>
-      <script src="js/index.js"></script>
-</body>
-
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="main-dashboard.html">
+              <i class="navigation__icon" data-feather="home"></i>
+              <span class="navigation__text">HOME</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link active" href="06-Sales-officer.html" >
+              <i class="navigation__icon" data-feather="user"></i>
+              <span class="navigation__text">SO</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="11-Profit.html">
+              <i class="navigation__icon" data-feather="dollar-sign"></i>
+              <span class="navigation__text">Profit</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="08-Dashboard-Inventory.html">
+              <i class="navigation__icon" data-feather="clipboard"></i>
+              <span class="navigation__text">Inventory</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>

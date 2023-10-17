@@ -254,11 +254,14 @@ a {
     right: 0; */
 }
 
-.product__picture {
+.product__picture { 
     text-align: center;
     padding: 22px 27px 19px 25px;
 }
-
+.product__picture img{
+    width: 268px;
+    height: 205px;
+}
 .product__data {
     margin-bottom: 25px;
 }
