@@ -40,7 +40,7 @@ $(document).ready(function () {
     afterDatasetsDraw(chart, args, options){
       const {ctx, data, chartArea: {top, bottom, left, right, width, height}} = chart;
       ctx.save();
-      ctx.font = "700 30px Inter";
+      ctx.font = "700 25px Inter";
       ctx.fillStyle = '#222950';
       ctx.textAlign = "center"
       ctx.fillText("৳"+data.datasets[0].data[0], width/2, height/2 + 20)
@@ -49,7 +49,7 @@ $(document).ready(function () {
       ctx.font = "400 15px Inter";
       ctx.fillStyle = '#595F84';
       ctx.textAlign = "center"
-      ctx.fillText("Total", width/2, height/2 + top + -30)
+      ctx.fillText("Total", width/2, height/2 + top + -20)
     }
   }
   // config 
