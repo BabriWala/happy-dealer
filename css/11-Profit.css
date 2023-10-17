@@ -169,6 +169,12 @@ body {
     gap: 18px;
 }
 
+.profile__data img{
+  width: 54.801px;
+  height: 55px; 
+  border-radius: 12px; 
+}
+
 .profile__name {
     color: var(--black, #222950);
     font-feature-settings: 'clig' off, 'liga' off;
@@ -337,6 +343,12 @@ body {
     border-radius: 20px 20px 0px 0px;
     background: #FFF;
     box-shadow: 0px -5px 50px 0px rgba(0, 45, 94, 0.12);
+}
+
+/* Single chart */
+.single-profit-chart{
+  width: 45px;
+  height: 45px; 
 }
 
 /* Profit Statistics */
